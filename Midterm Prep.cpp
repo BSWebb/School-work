@@ -34,12 +34,12 @@ int main()
       std::cout << "So you are a teenager.\n";
       std::cout << "Enter a 3 letter word: ";
       std::cin >> word;
+      
       if (word.length() == 3)
       {
           std::cout << "Original: " << word;
-          std::cout << "Backwards: " << word;
-          
-          
+          std::cout << "\n";
+          std::cout << "Backwards: " << word.at(2) << word.at(1) << word.at (0);
       }
       if (word.length() > 3)
       {
@@ -54,24 +54,23 @@ int main()
     else 
     {
       std::cout << "So you are an adult.\n";
-      std::cout << "First letter of your first name: ";
-      std::cout << first.at(0);
+      std::cout << "Enter a 3 letter word: ";
+      std::cin >> word;
+
+      if (word.length() == 3)
+      {
+          std::cout << "The word" << " " << word << " " << "contains" << " " << "22" << " " << "vowels. ";
+      }
+      if (word.length() > 3)
+      {
+          std::cout << "You entered a word that is more than 3 letters.";
+      }
+      if (word.length() < 3)
+      {
+          std::cout << "You entered a word that is less than 3 letters.";
+      }
       std::cout << "\n";
-      std::cout << "Last letter of your last name: ";
-      std::cout << last.at(0);
     }
-    
    
-  
-
-
-
-
-
-
-
-
-
 }
-
 
